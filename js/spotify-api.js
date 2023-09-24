@@ -1,4 +1,5 @@
-const url = 'https://spotify23.p.rapidapi.com/search/?q=%3CREQUIRED%3E&type=multi&offset=0&limit=10&numberOfTopResults=5';
+const searchtool= document.getElementById('search');
+const url = `https://spotify23.p.rapidapi.com/search/?q=${searchtool.value}&type=multi&offset=0&limit=10&numberOfTopResults=5`;
 const options = {
 	method: 'GET',
 	headers: {
