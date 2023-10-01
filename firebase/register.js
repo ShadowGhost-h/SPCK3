@@ -1,12 +1,12 @@
 import { auth } from "./config.js";
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
 
-const usernameElm = document.getElementById("username");
+const emailElm = document.getElementById("email");
 const passwordElm = document.getElementById("password");
 const registerBtn = document.getElementById("register-btn");
 
 const handleRegister = () => {
-  const email = usernameElm.value;
+  const email = emailElm.value;
   const password = passwordElm.value;
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
