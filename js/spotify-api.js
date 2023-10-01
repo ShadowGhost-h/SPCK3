@@ -8,7 +8,6 @@ const getdata = async() => {
       "X-RapidAPI-Host": "spotify23.p.rapidapi.com",
     },
   };
-
   try {
     const response = await fetch(url, options);
     const result = await response.text();
